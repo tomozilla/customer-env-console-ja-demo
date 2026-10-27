@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer environment console (sample)</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; background: #f6f7f8; color: #1c1c1c; }
+  main { max-width: 1000px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #555; font-size: 14px; margin-bottom: 16px; }
+  .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  textarea { width: 100%; box-sizing: border-box; height: 100px; font-family: ui-monospace, monospace; font-size: 12px; }
+  button { padding: 6px 12px; font-size: 14px; margin-right: 8px; }
+  table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 6px; border-bottom: 1px solid #eee; word-wrap: break-word; }
+  .chip { display: inline-block; border-radius: 4px; padding: 0 6px; font-size: 12px; margin-right: 4px; border: 1px solid #ccc; }
+  .current { background: #e8f5e9; border-color: #a5d6a7; }
+  .behind { background: #fff4e5; border-color: #f0c27b; }
+  .drift { background: #fdecea; border-color: #e5a29b; }
+  .unchecked, .unknown-version { background: #eee; }
+  .tot { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .box { flex: 1; min-width: 160px; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background: #fff; }
+  .box b { font-size: 22px; display: block; }
+  .warn { background: #fff4e5; border: 1px solid #f0c27b; padding: 8px 10px; border-radius: 6px; font-size: 13px; margin: 8px 0; }
+  .err { background: #fdecea; border-color: #e5a29b; }
+  code { font-size: 12px; }
+  .foot { font-size: 12px; color: #666; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Customer environment console (sample)</h1>
+  <div class="sub">One project per customer: see which projects follow the template, which were changed by hand, who owns each one, and what the ones you own cost. Nothing leaves your browser.</div>
+  <div id="banner"></div>
+  <section class="card">
+    <textarea id="input" placeholder='{"customers":[ ... ]}' spellcheck="false"></textarea>
+    <div style="margin-top:8px"><button id="load-sample">Load sample registry</button><button id="clear">Clear</button></div>
+    <div id="msg"></div>
+  </section>
+  <div id="board"></div>
+  <div class="foot" id="foot"></div>
+</main>
+<script src="registry.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

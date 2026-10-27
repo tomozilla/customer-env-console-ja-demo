@@ -1,0 +1,9 @@
+{
+  "customers": [
+    { "name": "acme-demo",    "ref": "aaaaaaaaaaaaaaaaaaaa", "owner": "us",     "state": "active", "handover": "none",      "version": "v2", "fingerprint": "ab1a7ecec4", "checkedAt": "2026-10-27" },
+    { "name": "globex-demo",  "ref": "bbbbbbbbbbbbbbbbbbbb", "owner": "us",     "state": "active", "handover": "none",      "version": "v1", "fingerprint": "70a8c9b749", "checkedAt": "2026-10-27" },
+    { "name": "initech-demo", "ref": "cccccccccccccccccccc", "owner": "us",     "state": "active", "handover": "none",      "version": "v1", "fingerprint": "6c935b9a23", "checkedAt": "2026-10-27" },
+    { "name": "umbrella-demo","ref": "dddddddddddddddddddd", "owner": "client", "state": "active", "handover": "done",      "version": "",   "fingerprint": "", "checkedAt": "" },
+    { "name": "hooli-demo",   "ref": "eeeeeeeeeeeeeeeeeeee", "owner": "us",     "state": "paused", "handover": "requested", "version": "v1", "fingerprint": "6c935b9a23", "checkedAt": "2026-08-01" }
+  ]
+}
